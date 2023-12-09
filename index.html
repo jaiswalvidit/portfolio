@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio site</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/9216467713.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="/personal-portfolio-img/images/logo.png" class="logo" alt="image">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closeMenu()">
+                    </i> 
+
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()">
+                </i>
+
+            </nav>
+            <div class="header-text">
+                <h2 id="name"></h2>
+
+                <h1>Hi ,I am Vidit Jaiswal</h1>
+            </div>
+        </div>
+
+    </div>
+    <!-- -----------------------About-------------------------------------  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="/images/photo.jpg" alt="" height="400px">
+                </div>
+                <div class="about-col-2">
+                    <h1>About Me</h1>
+                    <p>As a backend web developer, I thrive on creating efficient and scalable solutions that power the digital world. With a strong foundation in MERN stack development, I specialize in building robust and user-friendly web applications.
+
+                        In addition to my professional experience, I am an active participant in competitive programming platforms such as Codeforces, where I have achieved a maximum rating of 1284, and Codechef, where I hold a 3-star rating with a maximum rating of 1665. These platforms have honed my problem-solving skills and exposed me to diverse coding challenges.
+                        
+                        Furthermore, I have expanded my technical knowledge and proficiency through my consistent engagement with Leetcode, where I have reached a rating of 1871. This has sharpened my algorithmic thinking and deepened my understanding of data structures.
+                        
+                        Driven by my passion for coding, I constantly seek opportunities to learn and grow in the field of backend web development. I enjoy collaborating with talented individuals and leveraging my skills to contribute to challenging projects.
+                        
+                        If you're looking for a dedicated and skilled backend web developer with expertise in the MERN stack, I would be thrilled to connect and explore potential opportunities to work together.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills </p>
+                        <p class="tab-links" onclick="opentab('skills')">Experience</p>
+                        <p class="tab-links" onclick="opentab('skills')">Education </p>
+                    </div>
+                  
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul><li><span>UI/UX</span><br>HTML</li></ul>
+                        <ul><li><span>UI/UX</span><br>MERN</li></ul>
+                        <ul><li><span>UI/UX</span><br>DSA</li></ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul><li><span>UI/UX</span><br>Designig web/app interfaces</li></ul>
+                        <ul><li><span>UI/UX</span><br>Designig web/app interfaces</li></ul>
+                        <ul><li><span>UI/UX</span><br>Designig web/app interfaces</li></ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul><li><span>Ajay Kumar Garg Engineering College</span><br>Designig web/app interfaces</li></ul>
+                        <ul><li><span>Intermediate</span><br>Designig web/app interfaces</li></ul>
+                        <!-- <ul><li><span>UI/UX</span><br>Designig web/app interfaces</li></ul> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------------------Services --------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div><i class="fa-solid fa-code"></i><h2>Frontend</h2>
+                <p>
+                    <ul>
+                        <li>HTML/CSS</li>
+                        <li>React Js</li>
+                        <li>Bootstrap</li>
+                        
+                    </ul>
+                </p>
+            <a href="#">Learn more</a>
+        </div>
+        <div><i class="fa-solid fa-crop"></i><h2>Backend</h2>
+            <p><ul>
+                <li>NodeJs</li>
+                <li>ExpressJs</li>
+                <li>MongoDb</li>
+                <li>Mysql</li></ul></p>
+        <a href="#">Learn more</a>
+    </div>
+    <div><i class="fa-solid fa-crop"></i><h2>General</h2>
+        <p><ul>
+            <li>JavaScript</li>
+            <li>C/C++</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Git/Github</li>
+        </ul></p>
+    <a href="#">Learn more</a>
+</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------portfolio---------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/personal-portfolio-img/images/download (1).jpeg "  alt="work">
+                    <div class="layer">
+                        <h3>Food Space</h3>
+                        <p>Fullstack webapp built using MERN provides user authentication,payment gateway and cart functionality .</p>
+                        <a href="https://github.com/jaiswalvidit/gofoodproject" target="_blank"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/personal-portfolio-img/images/images (2).jpeg" alt="work">
+                    <div class="layer">
+                        <h3>Weather Webapp</h3>
+                        <p>!</p>
+                       <a href="https://github.com/jaiswalvidit/weather-app" target="_blank"><i class="fa-solid fa-link"></i></a>
+                       <a href="https://jaiswalvidit.github.io/weather-app/" target="_blank">Visit</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/personal-portfolio-img/images/images.jpeg"  alt="work">
+                    <div class="layer">
+                        <h3>Spotify Clone</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rem non omnis, cum illum eius fugiat minus autem adipisci excepturi!</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+
+    </div>
+
+    <!-- ---------------------------contact--------------- -->
+    <div id="id">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-square-envelope"></i>jaiswalvidit23@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>9696702525</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/vidit-jaiswal-26664520a/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/jaiswalvidit"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="/ViditResume.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="name" required>
+                        <input type="text" name="email" placeholder="email" required>
+                        <textarea name="message" cols="30" rows="10" placeholder="Enter Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script>
+        var tab_links=document.getElementsByClassName("tab-links");
+        var tab_contents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname)
+        {
+            for(tab_link of tab_links)
+            {
+                tab_link.classList.remove("active-link");
+            }
+            for(tab_link of tab_contents)
+            {
+                tab_link.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link"); 
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var names = ['Software Engineer', 'Fullstack Developer', 'Competitive Programmer'];
+        var currentIndex = 0;
+    
+        function changeName() {
+            var element = document.getElementById('name');
+    
+            // Check if names array is not empty
+            if (names.length > 0) {
+                var currentName = names[currentIndex];
+    
+                // Clear the content before displaying the new name
+                element.textContent = '';
+    
+                // Use map to create an array of promises
+                var promises = Array.from(currentName).map((char, index) => {
+                    return new Promise(resolve => {
+                        setTimeout(() => {
+                            element.textContent += char;
+                            resolve();
+                        }, 100 * index); // Adjust the delay (in milliseconds) between characters
+                    });
+                });
+    
+                // Use Promise.all to wait for all promises to resolve
+                Promise.all(promises).then(() => {
+                    // Move to the next name after displaying all characters
+                    currentIndex = (currentIndex + 1) % names.length;
+                });
+            } else {
+                // Display an empty string if the names array is empty
+                element.textContent = '';
+            }
+        }
+    
+        // Initial setup
+        changeName();
+    
+        // Change name every 5 seconds
+        setInterval(changeName, 5000);
+    </script>
+    
+    
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        
+        function openMenu()
+        {sidemenu.style.right="0px";
+    }
+    function closeMenu()
+        {sidemenu.style.right="-200px";
+    }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyKOHtgfxycWdVTxvtfdkoqxWT62lLnlYaFZ8aE5fXqFP1pjH0RNqjT5YfUsE6ZtBTw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully!!"
+                setTimeout(function()
+                {
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+    
+</body>
+</html>
