@@ -29,7 +29,6 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbyKOHtgfxycWdVTxvtfdk
         })
 
 
-
         var names = ['Software Engineer', 'Fullstack Developer', 'Competitive Programmer'];
         var currentIndex = 0;
     
@@ -41,13 +40,13 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbyKOHtgfxycWdVTxvtfdk
                 var currentName = names[currentIndex];
     
                 // Clear the content before displaying the new name
-                element.textContent = '';
+                element.innerHTML = '';
     
                 // Use map to create an array of promises
                 var promises = Array.from(currentName).map((char, index) => {
                     return new Promise(resolve => {
                         setTimeout(() => {
-                            element.textContent += char;
+                            element.innerHTML += char;
                             resolve();
                         }, 100 * index); // Adjust the delay (in milliseconds) between characters
                     });
@@ -59,8 +58,8 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbyKOHtgfxycWdVTxvtfdk
                     currentIndex = (currentIndex + 1) % names.length;
                 });
             } else {
-                // Display an empty string if the names array is empty
-                element.textContent = '';
+                // Display a line break if the names array is empty
+                element.innerHTML = '<br>';
             }
         }
     
@@ -69,8 +68,6 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbyKOHtgfxycWdVTxvtfdk
     
         // Change name every 5 seconds
         setInterval(changeName, 5000);
-
-
         var tab_links=document.getElementsByClassName("tab-links");
         var tab_contents=document.getElementsByClassName("tab-contents");
         function opentab(tabname)
